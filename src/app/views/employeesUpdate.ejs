@@ -1,0 +1,25 @@
+<% include header %>
+
+<div class="col-md-6 mt-4 card" style="margin: auto">
+    <form class="card-body" action="/employee/update/<%= employee.id_employee %>" method="POST">
+        <h3 class="card-title">Modificar empleado</h3>
+        <div class="form-group">
+            <input name="name" type="text" class="form-control" value="<%= employee.name%>">
+        </div>
+        <div class="form-group">
+            <input name="age" type="text" class="form-control" value="<%= employee.age%>">
+        </div>
+        <div class="form-group">
+            <input name="health_service" type="text" class="form-control" value="<%= employee.health_service%>">
+        </div>
+        <div class="form-group">
+            <input name="disability" type="text" class="form-control" value="<%= employee.disability%>">
+        </div>
+        <div class="form-group">
+            <input name="position" type="text" class="form-control" value="<%= employee.position%>">
+        </div>
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+</div>
+
+<% include footer %>
